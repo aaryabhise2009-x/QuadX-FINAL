@@ -1,0 +1,663 @@
+/* Register the Bold version */
+@font-face {
+  font-family: 'Proxima Nova';
+  /* Path: FolderName / FileName */
+  src: url('Proxima-Nova/proximanova_bold.otf') format('opentype'); 
+  font-weight: bold;
+}
+
+/* Register the Regular version */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('Proxima-Nova/proximanova_regular.ttf') format('opentype');
+  font-weight: normal;
+}
+
+/* Apply it to the whole site */
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.hero-content h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: bold; /* This tells the browser to use the Bold file above */
+}
+
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f0f0; }
+nav { background: #000000; color: white; display: flex; justify-content: space-between; padding: 1rem 5%; }
+.nav-links button { background: none; border: none; color: white; cursor: pointer; font-weight: bold; margin-left: 15px; }
+
+.page { display: none; padding: 40px 5%; }
+.page.active { display: block; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card img { width: 100%; border-radius: 10px; }
+.btn { background: #000000; color: white; padding: 15px; text-decoration: none; border-radius: 5px; text-align: center; }
+
+body {
+  /* 1. Link your image */
+  background-image: url("website-background.png");
+
+  /* 2. Make it cover the whole screen */
+  background-size: cover;
+
+  /* 3. Keep it centered */
+  background-position: center;
+
+  /* 4. Stop it from repeating if the page is long */
+  background-repeat: no-repeat;
+
+  /* 5. Keep the image fixed so content scrolls over it */
+  background-attachment: fixed;
+
+  /* 6. Ensure it fills at least the full height of the browser */
+  min-height: 100vh;
+  margin: 0;
+}
+
+#home {
+  color: #ffffff; /* Sets text to pure white */
+}
+
+/* This targets the main titles on the home screen */
+#home h1, #home h3 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow so white text is readable over light parts of the image */
+}
+
+/* This targets any paragraphs or lists on the home screen */
+#home p {
+  color: #ffffff;
+}
+
+/* Center the home page content */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh; /* Takes up most of the screen height */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* This centers the container and the buttons inside it */
+.home-button-group {
+  display: flex;          /* Enables Flexbox */
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center;     /* Centers buttons vertically (if needed) */
+  gap: 30px;              /* Adds space between the two square buttons */
+  margin-top: 40px;       /* Adds space between the title and the buttons */
+  width: 100%;            /* Ensures the container spans the full width */
+}
+
+/* Ensure the parent #home is also centering its children */
+#home {
+  display: flex;
+  flex-direction: column; /* Stacks title, then subtitle, then buttons */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;      /* Makes it take up the full screen height */
+}
+
+
+/* Large Square Home Buttons */
+.square-btn {
+  background-color: #f3c90d; /* Dark Green */
+  color: white;
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 15px; /* Rounded corners per your preference */
+  font-family: "proxima-nova", sans-serif; /* Or your chosen font */
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.square-btn:hover {
+  background-color: #004d00;
+  transform: scale(1.05); /* Slight "pop" effect on hover */
+}
+
+/* Hide all pages by default */
+.page {
+    display: none;
+}
+
+/* Only show the page that has the .active class */
+.page.active {
+    display: block  !important;
+}
+
+/* This is the style for the button of the page you are currently viewing */
+.nav-links button.active-tab {
+    color: #FFD700; /* Gold or a bright color to stand out against dark green */
+    border-bottom: 2px solid #FFD700; /* Adds a nice underline effect */
+    transition: all 0.3s ease;
+}
+
+
+/* Member Grid Layout */
+.member-grid {
+  display: grid;
+  /* Creates exactly 4 columns */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual Member Tile */
+.member-card {
+  background: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+  backdrop-filter: blur(10px);        /* 2026 Glassmorphism effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px); /* Lifts up on hover */
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.member-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures headshots aren't stretched */
+}
+
+.member-info {
+  padding: 15px;
+}
+
+.member-info h3 {
+  margin: 0;
+  font-family: 'Proxima Nova', sans-serif;
+  color: #FFD700; /* Gold for names */
+  font-size: 1.2rem;
+}
+
+.member-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Responsive: Change to 2 columns on mobile phones */
+@media (max-width: 900px) {
+  .member-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+#members {
+  padding-top: 60px; /* Gives space at the top since the title is gone */
+  display: flex;
+  justify-content: center; /* Centers the whole grid on the screen */
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Keeps the 4x3 layout */
+  gap: 25px;
+  max-width: 1100px;
+  width: 90%;
+}
+
+
+/* This ensures the home content stays centered */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; 
+}
+
+/* This hides EVERYTHING that isn't the active page */
+.page {
+    display: none !important; 
+}
+
+/* This shows ONLY the active page */
+.page.active {
+    display: block !important;
+}
+
+/* Specific fix for the member grid */
+#members {
+    display: none;
+}
+
+#members.active {
+    display: flex !important; /* Flex works better for centering the grid */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Targets the "2025-2026 Roster" title specifically */
+#members h2 {
+    color: #ffffff !important; /* Forces it to white */
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Helps it stand out if your background is busy */
+}
+
+.member-card img {
+  width: 100%;       /* Fills the card width */
+  height: 250px;     /* Sets a consistent height for the 4x3 grid */
+  object-fit: cover; /* This is the "magic" line: it crops the photo to fit without stretching */
+  display: block;
+}
+
+.member-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 250px !important;
+    opacity: 1 !important;     /* Ensures it isn't transparent */
+    visibility: visible !important; 
+    object-fit: cover;
+}
+
+/* Home Page Container */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* 1. Large Background Text */
+.hero-bg-text {
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 9rem; /* Bigger Heading */
+    font-weight: 900;
+    color: #ffffff; 
+    margin: 0;
+    line-height: 0.8;
+    z-index: 1; /* Lowest layer */
+    pointer-events: none;
+}
+
+/* 2. Larger Robot Photo Layered Over Text */
+.robot-wrapper {
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    z-index: 2;
+    pointer-events: none;
+
+    /* --- MOVE DOWN: Change from -60px to -40px --- */
+    margin-top: -40px; 
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-robot {
+    /* Change the 85% to 75% to make it vanish sooner */
+    mask-image: linear-gradient(to bottom, black 0%, black 20%, transparent 75%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 20%, transparent 75%);
+}
+
+
+/* 3. Gold Buttons Layer */
+.home-button-group {
+    display: flex;
+    gap: 30px;
+    margin-top: -50px; /* Pulls buttons up into the faded part of the robot */
+    z-index: 3;        /* Highest layer */
+}
+
+
+
+
+
+.home-button-group {
+    display: flex;
+    gap: 20px;          /* Space between the buttons */
+    width: 90%;         /* Takes up almost the full width */
+    max-width: 1200px;  /* Keeps them from getting TOO wide on giant monitors */
+    
+    /* --- PULL HIGHER: Keep your height adjustment --- */
+    margin-top: -140px; 
+    
+    z-index: 10;
+    position: relative;
+    justify-content: center;
+}
+
+.square-btn {
+    /* 1. FLEXIBLE WIDTH */
+    flex: 1;            /* Each button takes up equal space */
+    height: 120px;      /* Reduced height so they aren't giant towers */
+    
+    /* 2. GOLD STYLING */
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: #002200;
+    border: none;
+    border-radius: 15px;
+    
+    /* 3. TEXT STYLING */
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+}
+
+.square-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    filter: brightness(1.1);
+    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4);
+}
+
+.home-button-group {
+    display: flex;
+    gap: 15px;
+    width: 95%;         /* Almost full screen width */
+    max-width: 1400px;  /* Cap for very large monitors */
+    margin-top: -160px; /* Pulls them up into the robot fade */
+    z-index: 10;
+    position: relative;
+}
+
+.square-btn {
+    flex: 1;
+    height: 250px;      /* Increased Height */
+    border: 2px solid #D4AF37; /* Gold border to keep the theme */
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-size: cover;
+    background-position: center;
+}
+
+/* The Black Transparent Layer (Overlay) */
+.square-btn::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Transparent black layer */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+/* Button Title Styling */
+.square-btn span {
+    position: relative;
+    z-index: 2;         /* Sits on top of the black layer */
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;  /* Larger Text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Individual Button Images */
+.btn-season { background-image: url('SEASON.png'); }
+.btn-members { background-image: url('TEAM\ PHOTO.png'); }
+.btn-docs { background-image: url('DOCUMENTS.png'); }
+
+/* Hover Effects */
+.square-btn:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #ffffff;
+}
+
+.square-btn:hover::before {
+    background: rgba(0, 0, 0, 0.3); /* Brightens the image on hover */
+}
+
+/* Outreach Page Specifics */
+
+
+.outreach-tile {
+    aspect-ratio: 1 / 1; /* Makes them perfect squares */
+    border: 2px solid #D4AF37; /* Gold border */
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.outreach-tile:hover {
+    transform: scale(1.03);
+    border-color: #ffffff;
+}
+
+.tile-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.613); /* Dark bar at bottom for text */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.tile-overlay span {
+    color: #ffffff;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* Mobile: Stack to 1 column so it's readable on a phone */
+@media (max-width: 768px) {
+    .outreach-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#outreach {
+    width: 100vw; 
+    display: none; /* Controlled by JS */
+    flex-direction: column;
+    align-items: center;    /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    padding-top: 100px;
+}
+
+/* Forces the page to show as Flex when active */
+/* Target the whole outreach screen */
+#outreach {
+    display: none; /* Controlled by JS */
+    width: 100vw;  /* Force full viewport width */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    /* Use Grid to center the grid (Centering a center) */
+    display: grid;
+    place-items: center; /* This is the strongest centering command in CSS */
+    align-content: center;
+    
+    padding-bottom: 100px; /* This creates the extra "scroll space" at the bottom */
+    min-height: 120vh;
+}
+
+/* Ensure the JS 'active' class triggers the grid display */
+#outreach.active {
+    display: grid !important; 
+}
+
+.outreach-grid {
+    display: grid;
+    /* Force 3 columns of 300px each */
+    grid-template-columns: repeat(3, 300px); 
+    gap: 30px;
+    
+    /* Ensure no old margins or floats are fighting us */
+    margin: 0 auto !important; 
+    float: none !important;
+    text-align: center;
+}
+
+.outreach-tile {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #D4AF37;
+    border-radius: 20px;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
+
+#outreach h2 {
+    color: #ffffff !important; /* Forces the text to white */
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Makes it pop */
+}
+
+#robots {
+    display: none; /* Managed by JS */
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5% 100px;
+}
+
+#robots.active {
+    display: flex !important;
+}
+
+.robot-showcase {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 Column Grid */
+    gap: 40px;
+    width: 90%;
+    max-width: 1000px; /* Limits width to keep tiles looking sleek */
+}
+
+.robot-tile {
+    display: grid;
+    grid-template-columns: 1fr 350px; /* Left text area, fixed 350px image area */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    min-height: 250px; /* Decently tall */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.robot-tile:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.robot-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.robot-text h3 {
+    color: #FFD700; /* Gold Title */
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.robot-text p {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.robot-image {
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #D4AF37; /* Gold divider */
+}
+
+.robot-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents stretching */
+}
+
+/* Mobile: Stack text over image on phones */
+@media (max-width: 768px) {
+    .robot-tile {
+        grid-template-columns: 1fr;
+    }
+    .robot-image {
+        height: 200px;
+        border-left: none;
+        border-top: 2px solid #D4AF37;
+    }
+}
+
+#robots h2 {
+    color: #ffffff !important; /* Forces the text to white */
+    text-align: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 50px; /* Space between title and the first robot tile */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
+}
+
+#first {
+    display: none; /* Managed by JS */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#first.active {
+    display: flex !important;
+}
+
+.first-title {
+    color: #ffffff !important; /* Force white text */
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 6rem; /* Large impact font size */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.5);
+}

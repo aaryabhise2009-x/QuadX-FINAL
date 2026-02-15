@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team QuadX 2025-2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <div class="logo">QUADX 6299</div>
+    <div class="nav-links">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('first')">What is FIRST?</button> <!-- NEW -->
+        <button onclick="showPage('robots')">Robots</button>
+        <button onclick="showPage('outreach')">Outreach</button>
+        <button onclick="showPage('members')">Members</button>
+        <button onclick="showPage('docs')">Documents</button>
+    </div>
+</nav>
+
+
+
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+    <div class="hero-container">
+        <!-- Background Large Text -->
+        <h1 class="hero-bg-text">TEAM QUADX 6299</h1>
+        
+        <!-- Hovering Robot Image -->
+        <div class="robot-wrapper">
+            <img src="robot-transparent.png" alt="Our Robot" class="hero-robot">
+        </div>
+
+        <!-- Home Buttons -->
+        <div class="home-button-group">
+    <button class="square-btn btn-season" onclick="showPage('robots')">
+        <span>ROBOTS</span>
+    </button>
+    <button class="square-btn btn-members" onclick="showPage('members')">
+        <span>OUR TEAM</span>
+    </button>
+    <button class="square-btn btn-docs" onclick="showPage('outreach')">
+        <span>OUTREACHES</span>
+    </button>
+</div>
+    </div>
+</div>
+
+
+
+    <!-- Season Page -->
+    <div id="season" class="page">
+        <h2>Season Summary</h2>
+        <div class="content">
+            <h3>Awards</h3>
+            <ul><li>Engineering Excellence</li></ul>
+            <p>Our season focused on precision and speed...</p>
+        </div>
+    </div>
+
+    <!-- Documents Page -->
+    <div id="docs" class="page">
+        <h2>Official Documents</h2>
+        <div class="grid">
+            <a href="sponsor.pdf" class="btn" target="_blank">Sponsorship PDF</a>
+            <a href="volunteer.pdf" class="btn" target="_blank">Volunteer Guide</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- New Team Members Page -->
+<div id="members" class="page">
+  <h2 class="section-title">Meet the Team</h2>
+  <div class="member-grid">
+    <!-- Repeat this 'member-card' 12 times for your 4x3 grid -->
+    <div class="member-card">
+      <img src="./Headshots/Aarya.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Tony Ortega</h3>
+        <p>Co-PM/Hardware Lead</p>
+      </div>
+    </div>
+    
+    <div class="member-card">
+      <img src="Headshots/Amal.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Amal Madapaty</h3>
+        <p>Co-PM/Software Lead</p>
+      </div>
+    </div>
+    <!-- ... add 10 more cards here ... -->
+     <div class="member-card">
+      <img src="Headshots/Aarya.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Aarya Bhise</h3>
+        <p>APM/Marketing Lead</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Aiden.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Aiden Giroux</h3>
+        <p>Software Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Alex.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Alex Ritter</h3>
+        <p>Software Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Sarthak.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Sarthak Kamble</h3>
+        <p>Software Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Baran.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Baran Shafaei</h3>
+        <p>Marketing Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Andrea.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Andrea Joseph</h3>
+        <p>Marketing Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Eeshu.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Eeshu Pachigolla</h3>
+        <p>Hardware Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Seyeon.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Seyeon Kwon</h3>
+        <p>Hardware Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Akash.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Akash Reddy</h3>
+        <p>Hardware Member</p>
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Headshots/Saachi.jpg" alt="Member Name">
+      <div class="member-info">
+        <h3>Saachi Arya</h3>
+        <p>Hardware Member</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="outreach" class="page">
+    <h2 class="section-title">Our Outreach History</h2>
+    <div class="outreach-grid">
+        <!-- Button for 2025-2026 -->
+        <button class="outreach-tile" onclick="showPage('outreach-25-26')" style="background-image: url('/OUTREACH-HEADERS/25-26:OUTREACH.png');">
+            <div class="tile-overlay">
+                <span>2025-2026 Outreach</span>
+            </div>
+        </button>
+
+        <!-- Button for 2024-2025 -->
+        <button class="outreach-tile" onclick="showPage('outreach-24-25')" style="background-image: url('/OUTREACH-HEADERS/24-25:OUTREACH.png');">
+            <div class="tile-overlay">
+                <span>2024-2025 Outreach</span>
+            </div>
+        </button>
+
+        <!-- Repeat this block 7 more times to complete the 3x3 grid (9 total) -->
+        <!-- You can use a placeholder image if you don't have photos for all years yet -->
+         <button class="outreach-tile" onclick="showPage('outreach-23-24')" style="background-image: url('/OUTREACH-HEADERS/23-24:OUTREACH.jpg');">
+            <div class="tile-overlay">
+                <span>2023-2024 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-22-23')" style="background-image: url('/OUTREACH-HEADERS/22-23:OUTREACH.png');">
+            <div class="tile-overlay">
+                <span>2022-2023 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-21-22')" style="background-image: url('/OUTREACH-HEADERS/21-22:OUTREACH.png');">
+            <div class="tile-overlay">
+                <span>2021-2022 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-20-21')" style="background-image: url('/OUTREACH-HEADERS/20-21:OUTREACH.png');">
+            <div class="tile-overlay">
+                <span>2020-2021 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-19-20')" style="background-image: url('/OUTREACH-HEADERS/19-20:OUTREACH.jpg');">
+            <div class="tile-overlay">
+                <span>2019-2020 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-18-19')" style="background-image: url('');">
+            <div class="tile-overlay">
+                <span>2018-2019 Outreach</span>
+            </div>
+        </button>
+        <button class="outreach-tile" onclick="showPage('outreach-17-18')" style="background-image: url('outreach25.jpg');">
+            <div class="tile-overlay">
+                <span>2017-2018 Outreach</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+<div id="outreach-25-26" class="page">
+    <h2>2025-2026 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-24-25" class="page">
+    <h2>2024-2025 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-23-24" class="page">
+    <h2>2023-2024 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-22-23" class="page">
+    <h2>2022-2023 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-21-22" class="page">
+    <h2>2021-2022 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-20-21" class="page">
+    <h2>2020-2021 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-19-20" class="page">
+    <h2>2019-2020 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-18-19" class="page">
+    <h2>2018-2019 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="outreach-17-18" class="page">
+    <h2>2017-2018 Outreach Details</h2>
+    <button onclick="showPage('outreach')">← Back to Outreach</button>
+</div>
+
+<div id="robots" class="page">
+    <h2 class="section-title">OUR ROBOTS</h2>
+    <div class="robot-showcase">
+        <!-- Repeat this robot-tile 9 times -->
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2025-2026: ???</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2024-2025: ATLAS</h3>
+                <p>Titan was our most robust build yet, focused on defensive maneuvers and heavy lifting during the end-game phase.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/titan.jpg" alt="2024 Robot">
+            </div>
+        </div>
+        <!-- ... add 7 more tiles ... -->
+         <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2023-2024: MIDAS</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2022-2023: ANUBIS</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2021-2022: HERCULES</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2020-2021: N/A</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2019-2020: HADES 2.0</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2018-2019: HELIOS</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2017-2018: N/A</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2016-2017: APOLLO</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+        <div class="robot-tile">
+            <div class="robot-text">
+                <h3>2015-2016: HERMES 2.0</h3>
+                <p>Designed for high-speed scoring and autonomous precision, Apex features a dual-intake system and a custom 4-stage lift.</p>
+            </div>
+            <div class="robot-image">
+                <img src="robots/apex.jpg" alt="2025 Robot">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="first" class="page">
+    <h1 class="first-title">FIRST</h1>
+</div>
